@@ -15,6 +15,12 @@ function getTodos(res) {
 module.exports = function (app) {
 
     // api ---------------------------------------------------------------------
+
+    // get all todos
+    app.get('/api/hello', function (req, res) {
+        res.send("Hello World!");
+    });
+
     // get all todos
     app.get('/api/todos', function (req, res) {
         // use mongoose to get all todos in the database
